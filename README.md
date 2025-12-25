@@ -4,7 +4,7 @@ A decentralized raffle smart contract using Chainlink VRF for provably fair rand
 
 ## Overview
 
-Automated lottery system that:
+Automated lottery system that-
 - Accepts entries via entrance fee
 - Automatically selects random winner using Chainlink VRF
 - Distributes entire contract balance to winner
