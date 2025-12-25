@@ -1,4 +1,4 @@
-# 🎰 Foundry Raffle
+#  Foundry Raffle
 
 A decentralized raffle smart contract using Chainlink VRF for provably fair random winner selection and Chainlink Automation for automated execution.
 
@@ -17,44 +17,6 @@ Automated lottery system that:
 - [Foundry](https://book.getfoundry.sh/getting-started/installation)
 - For testnet/mainnet: Chainlink VRF subscription at [vrf.chain.link](https://vrf.chain.link/), LINK tokens, and ETH
 
-## Installation
-
-```bash
-git clone <repository-url>
-cd foundry-lottery
-make install
-make update
-```
-
-## Usage
-
-```bash
-make build      # Compile contracts
-make test       # Run tests
-make format     # Format code
-make snapshot   # Gas snapshots
-make anvil      # Start local node
-```
-
-## Deployment
-
-### Local (Anvil)
-```bash
-make anvil      # Terminal 1
-make deploy     # Terminal 2
-```
-
-### Sepolia Testnet
-1. Create `.env` with `SEPOLIA_RPC_URL`, `PRIVATE_KEY`, `ETHERSCAN_API_KEY`
-2. Create VRF subscription at [vrf.chain.link](https://vrf.chain.link/)
-3. Update `HelperConfig.s.sol` with subscription ID
-4. Deploy:
-```bash
-make deploy ARGS="--network sepolia"
-make addConsumer ARGS="--network sepolia"      # If needed
-make fundSubscription ARGS="--network sepolia"  # If needed
-```
-
 ## Contract Functions
 
 **Main Functions:**
@@ -66,14 +28,6 @@ make fundSubscription ARGS="--network sepolia"  # If needed
 **Getters:** `getRaffleState()`, `getRecentWinner()`, `getNumberOfPlayers()`, `getEntranceFee()`, etc.
 
 **Events:** `RaffleEnter`, `RequestedRaffleWinner`, `WinnerPicked`
-
-## Testing
-
-```bash
-make test
-forge test --match-path test/unit/RaffleTest.t.sol
-forge test --match-path test/integration/Interactions.t.sol
-```
 
 ## Project Structure
 
