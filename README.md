@@ -1,6 +1,6 @@
 #  Foundry Raffle
 
-A decentralized raffle smart contract using Chainlink VRF for provably fair random winner selection and Chainlink Automation for automated execution.
+A decentralized raffle smart contract using Chainlink VRF for provably fair random winner selection and Chainlink Automation for automated execution
 
 ## Overview
 
