@@ -27,7 +27,6 @@ contract Raffle is VRFConsumerBaseV2Plus, AutomationCompatibleInterface {
         CALCULATING
     }
 
-    /* State variables */
     // Chainlink VRF Variables
     uint256 private immutable i_subscriptionId;
     bytes32 private immutable i_gasLane;
