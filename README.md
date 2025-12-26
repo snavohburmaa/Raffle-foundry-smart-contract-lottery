@@ -39,17 +39,6 @@ test/unit/RaffleTest.t.sol     # Unit tests
 test/integration/              # Integration tests
 ```
 
-## Makefile Commands
-
-| Command | Description |
-|---------|-------------|
-| `make install` | Install dependencies |
-| `make build` | Build contracts |
-| `make test` | Run tests |
-| `make deploy` | Deploy (local) |
-| `make deploy ARGS="--network sepolia"` | Deploy to Sepolia |
-| `make anvil` | Start local node |
-
 ## Documentation
 
 - [Foundry Book](https://book.getfoundry.sh/)
